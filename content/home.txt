@@ -1,0 +1,5 @@
+title: Bap, beatmaking toolkit with Javascript and Web Audio
+---
+text:
+
+A small Javascript library for making beats and composing sequences of Web Audio events for playback in modern browsers

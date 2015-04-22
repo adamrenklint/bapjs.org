@@ -1,0 +1,57 @@
+$light = #ddd
+$primary = #610007
+
+body
+  background-color $primary
+  color $light
+  font-family 'Source Sans Pro', sans-serif
+  margin 0
+
+.container
+  margin 70px auto
+  max-width 500px
+  font-size 1.6rem
+  text-align center
+
+#baplogo
+  fill $light
+  max-width 300px
+  margin 0 auto
+  display block
+
+.tagline
+  margin-top 40px
+
+a
+  color $light
+  font-weight bold
+  text-decoration none
+
+ul.menu
+  list-style none
+  margin 40px 0 40px 0
+  padding 0
+  text-align center
+
+  li
+    display inline-block
+    margin 0 10px
+    a
+      display block
+      border 1px solid $light
+      padding 10px 20px
+
+      &:hover
+        background-color $light
+        color $primary
+
+@media screen and (max-width: 400px)
+  .container
+    margin 20px
+  #baplogo
+    width 200px
+  .menu
+    li
+      width 90%
+      margin 0 20px
+      display block
