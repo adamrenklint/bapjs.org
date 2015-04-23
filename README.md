@@ -21,3 +21,5 @@ MIT © 2015 [Adam Renklint](http://adamrenklint.com)
   - Added link to Github repo
   - Tweaked homepage copy
   - Improved buttons and margins in responsive mode
+- **1.2.0**
+  - Added favicon
