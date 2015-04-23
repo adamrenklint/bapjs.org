@@ -1,6 +1,6 @@
 # bapjs.org
 
-Website for Bap, powered by [asimov-static](https://github.com/adamrenklint/asimov-static)
+Website for [Bap](https://github.com/adamrenklint/bap), powered by [asimov-static](https://github.com/adamrenklint/asimov-static)
 
 ## Usage
 
@@ -17,3 +17,7 @@ MIT © 2015 [Adam Renklint](http://adamrenklint.com)
 
 - **1.0.0**
   - Initial public release
+- **1.1.0**
+  - Added link to Github repo
+  - Tweaked homepage copy
+  - Improved buttons and margins in responsive mode

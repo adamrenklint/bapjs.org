@@ -1,4 +1,4 @@
-$light = #ddd
+$light = #eee
 $primary = #610007
 
 body
@@ -45,9 +45,9 @@ ul.menu
         background-color $light
         color $primary
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 500px)
   .container
-    margin 20px
+    margin 40px 20px
   #baplogo
     width 200px
   .menu
@@ -55,3 +55,6 @@ ul.menu
       width 90%
       margin 0 20px
       display block
+    li:not(:first-child)
+      a
+        border-top none
