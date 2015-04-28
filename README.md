@@ -23,3 +23,5 @@ MIT © 2015 [Adam Renklint](http://adamrenklint.com)
   - Improved buttons and margins in responsive mode
 - **1.2.0**
   - Added favicon
+- **1.3.0**
+  - Added version number
