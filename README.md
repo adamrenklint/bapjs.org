@@ -25,3 +25,5 @@ MIT © 2015 [Adam Renklint](http://adamrenklint.com)
   - Added favicon
 - **1.3.0**
   - Added version number
+- **1.4.0**
+  - Bap v0.2 is released: updated version number
