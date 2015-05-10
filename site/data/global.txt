@@ -1,1 +1,3 @@
 tagline: A toolkit for making beats with Javascript
+---
+stableVersion: 0.2.1

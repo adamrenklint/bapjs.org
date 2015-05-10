@@ -2,4 +2,50 @@ title: Getting started
 ---
 text:
 
-foobar2
+## Fundamentals
+
+Bap is a toolkit for making beats with Javascript and Web Audio for playback in modern browsers. It is inspired by the classic "MPC workflow", with a clock running at 96 ticks per beat and similar position signatures.
+
+Kits (programs in MPC terms) are instruments that contain infinite slots with infinite layers of samples and oscillators. Patterns are collections of notes connected to one or many kits, and can be arranged in multi-layered sequences.
+
+The goal of Bap is to make each aspect of beatmaking modular and reusable.
+
+## Installation
+
+There are two ways to get Bap into your project: either install it via npm and include in your Browserify build, or load it directly from our CDN.
+
+### A. Install from npm
+
+```sh
+$ npm install --save bap
+```
+
+### B. Load from CDN
+
+```html
+<script src="https://cdn.rawgit.com/adamrenklint/bap/v{{site.stableVersion}}/bap.min.js"></script>
+```
+
+## Usage
+
+There are also two ways to access Bap inside your project.
+
+### A. Require module
+
+```js
+var bap = require('bap');
+```
+
+### B. Use global reference
+
+```js
+var bap = window.bap;
+```
+
+## Examples
+
+### Hello world
+
+The "hello world" application of Web Audio libraries, a simple metronome:
+
+### Straight boombap drum
