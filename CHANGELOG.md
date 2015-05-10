@@ -1,4 +1,4 @@
-## Changelog
+# Changelog
 
 ## v1.4 (2015-05-07) [diff](https://github.com/adamrenklint/bapjs.org/compare/v1.3.0...v1.4.0)
 
