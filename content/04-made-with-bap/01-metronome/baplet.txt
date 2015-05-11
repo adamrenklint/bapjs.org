@@ -1,0 +1,9 @@
+title: Metronome
+---
+version: 2
+---
+source: baplets/metronome
+---
+text:
+
+The "Hello world" of audio applications, a steady and resilient metronome. Using position expressions and a simple oscillator.

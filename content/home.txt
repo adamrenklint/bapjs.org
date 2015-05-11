@@ -24,6 +24,8 @@ metronome playable example
 - Check out the interactive in-depth [Guides](/guides)
 - Browse more examples with annotated source in the [Made with Bap](/made-with-bap) gallery
 
+Made by Adam Renklint, Berlin april-may 2015
+
 ---
 
 This page is just an intro, should try to sell the idea of what could be made with Bap, what it could be used for.

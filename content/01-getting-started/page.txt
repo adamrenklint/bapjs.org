@@ -2,20 +2,9 @@ title: Getting started
 ---
 text:
 
-installation
-usage
-position signature
-note expressions: intro + link to guide
-kits, slots and layers
-patterns, sequences
-connect and start/pause/stop + link to controlling playback guide
-where to go next: api reference, guides or gallery/made with bap
-
-
-
 ## Installation
 
-There are two ways to get Bap into your project: either install it via npm and include in your Browserify build, or load it directly from our CDN.
+There are two ways to get Bap into your project: either install it via npm and include in your Browserify build, or load it directly from a CDN.
 
 ### A. Install from npm
 
@@ -31,19 +20,21 @@ $ npm install --save bap
 
 ## Usage
 
-There are also two ways to access Bap inside your project.
-
-### A. Require module
-
 ```js
 var bap = require('bap');
-```
-
-### B. Use global reference
-
-```js
+// or
 var bap = window.bap;
 ```
+
+position signature
+note expressions: intro + link to guide
+kits, slots and layers
+patterns, sequences
+connect and start/pause/stop + link to controlling playback guide
+where to go next: api reference, guides or gallery/made with bap
+
+
+
 
 ## Examples
 

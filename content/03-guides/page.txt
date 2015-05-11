@@ -2,5 +2,6 @@ title: Guides
 ---
 text:
 
+- timing and positions: why 96 ticks, where are the half and quarter beats, position signature, padded ticks
 - controlling playback: start/pause/stop a pattern/sequence, changing pattern/sequence by calling start, calling methods on bap.clock + changing playing state
-- note expressions: full explanation with playable examples
+- note expressions (101): full explanation with playable examples

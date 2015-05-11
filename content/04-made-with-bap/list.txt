@@ -1,0 +1,14 @@
+title: Made with Bap
+---
+text:
+
+made with bap: annotated examples and also maybe community works
+- metronome, v2
+- boombap, v2
+- slices, v2
+- sequences, v1
+- ?
+
+- display baplet properties
+  - bars, (initial) tempo
+  - views?

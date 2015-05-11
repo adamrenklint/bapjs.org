@@ -6,8 +6,9 @@ text:
 - License
 - roadmap and vision
   - v0.3: effects and chains
+  - v0.x: 12-bitcrusher without delay
   - bap-cli: scaffolding, dev server
-  - baplets: live coding playground + storage
+  - baplets: live coding playground + sharing and forking + embeddable player/editor
 - link to /changelog
 - link to /contribute
 - Props
