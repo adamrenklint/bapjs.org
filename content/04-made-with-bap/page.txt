@@ -1,0 +1,10 @@
+title: Made with Bap
+---
+text:
+
+made with bap: annotated examples and also maybe community works
+- metronome
+- boombap
+- slices
+- sequences
+- ?

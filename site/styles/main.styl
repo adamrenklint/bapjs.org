@@ -1,7 +1,7 @@
 @require "asimov.highlight"
 
 $light = #f8f8f8
-$dark = #0d0d0d
+$dark = #515151
 $less_dark = #515151
 $primary = #610007
 
@@ -32,11 +32,18 @@ body
     padding 0
 
   a
+    display block
     color $light
     text-decoration none
 
   .active
-    font-weight bold
+    position relative
+    :before
+      content "»"
+      position absolute
+      top -0.1rem
+      margin-left -0.8rem
+      margin-right 0.5rem
 
 .sidebar__tagline
   margin-bottom 2rem

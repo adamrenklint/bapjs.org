@@ -1,0 +1,6 @@
+title: Guides
+---
+text:
+
+- controlling playback: start/pause/stop a pattern/sequence, changing pattern/sequence by calling start, calling methods on bap.clock + changing playing state
+- note expressions: full explanation with playable examples
