@@ -4,7 +4,7 @@ text:
 
 Bap was created by {{link "http://adamrenklint.com" "Adam Renklint" target="_blank"}} in Berlin april-may 2015, and was first introduced at the [premiere WebAudio Berlin meetup](https://www.youtube.com/watch?v=_irRu7FA7Zs).
 
-The latest version is ```v0.2.1``` and was released on 2015-05-10. The [source code](https://github.com/adamrenklint/bap) and [detailed changelog](https://github.com/adamrenklint/bap/blob/master/CHANGELOG.md) is available on GitHub under the MIT license.
+The latest version is ```v{{site.stableVersion}}``` and was released on {{site.lastReleaseDate}}. The [source code](https://github.com/adamrenklint/bap) and [detailed changelog](https://github.com/adamrenklint/bap/blob/master/CHANGELOG.md) is available on GitHub under the MIT license.
 
 ## Feedback and issues
 
