@@ -4,7 +4,7 @@ version: 2
 ---
 text:
 
-The "Hello world" of audio libraries, a steady and resilient metronome. Using a simple oscillator and smart position expressions.
+The "hello world" of audio libraries, a steady and resilient metronome. Using a simple oscillator and smart position expressions.
 
 ---
 

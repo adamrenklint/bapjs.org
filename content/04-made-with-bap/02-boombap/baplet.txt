@@ -11,8 +11,11 @@ source:
 
 ```js
 var drumKit = bap.kit();
+// if our sample layer has no parameters, just pass the src
 drumKit.slot(1).layer('/site/files/sounds/kick.wav');
 drumKit.slot(2).layer('/site/files/sounds/snare.wav');
+// lower the volume of the hihat directly on the sample layer
+// so we don't have to do it on each note
 drumKit.slot(3).layer(bap.sample({
   src: '/site/files/sounds/hihat.wav',
   volume: 50
@@ -45,15 +48,17 @@ stringKit.slot(3).layer(bap.sample({
 var bassKit = bap.kit();
 bassKit.slot(1).layer(bap.sample({
   src: '/site/files/sounds/bass.wav',
-  attack: 0.01,
+  attack:   0.01,
   release: 0.01
 }));
 
 var boombapPattern = bap.pattern({
-  bars: 2,
+  bars:   2,
   tempo: 90
 });
 
+// add lazy kicks and eager snares
+// http://adamrenklint.com/lazy-kicks-eager-snares
 boombapPattern.channel(1).add(
   ['1.1.01', 'A01'],
   ['1.1.51', 'A01', null, 80],
@@ -69,18 +74,22 @@ boombapPattern.channel(1).add(
   ['2.4.03', 'A02']
 );
 
+// simple on-point hihat with one lazy note at the end
 boombapPattern.channel(2).add(
   ['*.odd.01',   'A03', null, 70],
   ['*.even.01', 'A03', null, 80],
   ['*.4.53',       'A03', null, 60]
 );
 
+// minimal use of the plongs
 boombapPattern.channel(3).add(
   ['1.1.01', 'B01'],
   ['1.4.90', 'B02', null, 40],
   ['2.1.52', 'B02', null, 70]
 );
 
+// the rhythm of the string pads are built from
+// a manual delay using the sample volume parameter
 boombapPattern.channel(4).add(
   ['1.2.05', 'C03', null, 60],
   ['1.2.51', 'C03', null, 40],
@@ -105,6 +114,7 @@ boombapPattern.channel(5).add(
   ['2.4.51', 'D01', 40,   80, -96]
 );
 
+// most important step, connect kits to the pattern
 boombapPattern
   .kit('A', drumKit)
   .kit('B', plongKit)
