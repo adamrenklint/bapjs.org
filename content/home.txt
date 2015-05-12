@@ -37,20 +37,3 @@ bap.clock.sequence = pattern.kit('A', kit);
 - Browse more examples with annotated source in the [Made with Bap](/made-with-bap) gallery
 
 Made by {{link "http://adamrenklint.com" "Adam Renklint" target="_blank"}}, Berlin april-may 2015. [MIT licensed](/about#license).
-
----
-
-This page is just an intro, should try to sell the idea of what could be made with Bap, what it could be used for.
-
-## Features
-
-- expressive: note expressions, functions, math
-- modular: kits and patterns/sequences, npm
-- collaborative: use existing software dev tools, github, jsfiddle, etc
-
-## Examples
-
-- metronome
-- boombap
-- slices
-- sequences

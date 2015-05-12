@@ -26,9 +26,22 @@ var bap = require('bap');
 var bap = window.bap;
 ```
 
-position signature
-smart position expressions: intro + link to guide
-kits, slots and layers
-patterns, sequences
-connect and start/pause/stop + link to controlling playback guide
-where to go next: api reference, guides or gallery/made with bap
+## Basic concepts
+
+### Positions and expressions
+
+Bap's internal clock runs at 96 ticks per beat, and note positions are formatted as ```bar.beat.tick```. In other words, a single bar spans from ```1.1.01``` to ```1.4.96```.
+
+To avoid repetition, use smart position expressions like ```*.odd.01``` and ```1.>1<4.%24```, which are expanded into flat positions automagically.
+
+Learn more about [positions and timing](/guides/positions-and-timing/) or [position expressions](/guides/smart-position-expressions/).
+
+### Structure of a beat
+
+A beat is made up of kits, patterns and sequences. Kits are collections of numbered slots, which contain one or many layers of samples and oscillators. One or many kits are connected to a pattern, which is a collection of numbered channels, and each channel can contain many notes. Patterns can be combined in rows and layers to sequences with variable tempo.
+
+All Bap objects are state models and can be cloned and serialized, or manipulated at runtime. Learn more in the [API reference](/api-reference/).
+
+## Want to learn more?
+
+Check out the [interactive guides](/guides/) and [Made with Bap gallery](/made-with-bap/).
