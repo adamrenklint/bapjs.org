@@ -14,9 +14,9 @@ All Bap objects are state models and can be cloned and serialized, or manipulate
 
 ```js
 var kit = bap.kit();
-kit.slot(1).layer('site/files/sounds/kick.wav');
-kit.slot(2).layer('site/files/sounds/snare.wav');
-kit.slot(3).layer('site/files/sounds/hihat.wav');
+kit.slot(1).layer('/site/files/sounds/kick.wav');
+kit.slot(2).layer('/site/files/sounds/snare.wav');
+kit.slot(3).layer('/site/files/sounds/hihat.wav');
 var pattern = bap.pattern({ bars: 2, tempo: 90 });
 pattern.channel(1).add(
   ['*.1.01',     'A1'],

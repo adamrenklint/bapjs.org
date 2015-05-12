@@ -1,4 +1,5 @@
 @require "asimov.highlight"
+@import "lists"
 
 $light = #f8f8f8
 $dark = #515151
@@ -14,22 +15,25 @@ body
   font-size 1.3rem
   color $dark
 
+p
+  line-height 1.3
+
+
 .sidebar
   background-color $primary
   color $light
-  width 15rem
-  position fixed
-  height 100%
   padding 1.5rem
 
   #baplogo
     max-width 180px
     fill $light
-    margin-top 0.5rem
+    margin 0 auto
+    display block
 
   ul
     list-style none
     padding 0
+    margin 1rem 0 0 0
 
     a
       display block
@@ -40,6 +44,7 @@ body
 
   .active
     position relative
+    padding-left 0.8rem
     :before
       content "»"
       position absolute
@@ -50,17 +55,18 @@ body
 .sidebar__tagline
   margin-bottom 2rem
   font-size 1.5rem
+  display none
 
 .sidebar__credits
   margin-top 2rem
+  display none
 
 .main
   max-width 700px
-  padding 3rem 3rem 3rem 22rem
+  padding 1rem
 
   h1
-    font-size 3rem
-    margin-bottom 1.5rem
+    margin-bottom 0.5rem
 
   p
     margin 0.5rem 0
@@ -128,3 +134,47 @@ body
     display block
     font-size 2rem
     background-color lightgrey
+
+.pagination-links
+  clear both
+  .prev-link
+    float left
+  .next-link
+    float right
+
+@media screen and (max-width: 499px)
+  .sidebar
+    ul
+      -webkit-column-count 3
+      -moz-column-count 2
+      column-count 2
+
+@media screen and (min-width: 500px) and (max-width: 799px)
+  .main
+    padding 2rem
+    h1
+      margin-bottom 1rem
+  .sidebar
+    ul
+      text-align center
+      li
+        display inline-block
+      li:not(:last-child)
+        margin-right 1rem
+
+@media screen and (min-width: 800px)
+  .main
+    padding 3rem 3rem 3rem 21rem
+    h1
+      font-size 3rem
+      margin-bottom 1.5rem
+  .sidebar
+    text-align left
+    width 14rem
+    position fixed
+    height 100%
+    #baplogo
+      margin 0.5rem 0 0 0
+  .sidebar__credits
+  .sidebar__tagline
+    display block

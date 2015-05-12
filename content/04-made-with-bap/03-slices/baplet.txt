@@ -1,10 +1,10 @@
-title: Boombap
+title: Slices
 ---
-version: 3
+version: 2
 ---
 text:
 
-A minimistic boombap pattern, using lots of sample layers in a funky arrangement, featuring a manual delay made with the volume param.
+Slices, little slices
 
 ---
 source:

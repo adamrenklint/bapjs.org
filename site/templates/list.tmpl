@@ -4,7 +4,10 @@
 
 <ul class="article-list">
   {{#children page.url}}
-    <li>{{link this.url this.title}} {{this.text}}</li>
+    <li>
+      <h2>{{link this.url this.title}}</h2>
+      <p>{{this.text}}</p>
+    </li>
   {{/children}}
 </ul>
 

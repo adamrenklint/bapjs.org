@@ -2,8 +2,37 @@ title: Metronome
 ---
 version: 2
 ---
-source: baplets/metronome
----
 text:
 
-The "Hello world" of audio applications, a steady and resilient metronome. Using a simple oscillator and smart position expressions.
+The "Hello world" of audio libraries, a steady and resilient metronome. Using a simple oscillator and smart position expressions.
+
+---
+
+source:
+
+```js
+var kit = bap.kit();
+
+// create an oscillator to use as template
+var basic = bap.oscillator({
+  attack: 0.001,
+  release: 0.1,
+  length: 0.08
+});
+
+// clone the template with different params into two slots
+kit.slot(1).layer(basic.with({ frequency: 330 }));
+kit.slot(2).layer(basic.with({ frequency: 440 }));
+
+// create a pattern and add notes using position expressions
+var pattern = bap.pattern({ bars: 2, tempo: 140 });
+pattern.channel(1).add(
+  // wildcard means "match anything" and will match 1 and 2
+  ['*.1.01', 'A1'],
+  // "greater than" will match anything above 1, i.e. 2, 3 and 4
+  ['*.>1.01', 'A2']
+);
+
+// connect the kit to the pattern
+bap.clock.sequence = pattern.kit('A', kit);
+```
