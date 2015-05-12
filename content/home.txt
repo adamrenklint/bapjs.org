@@ -1,4 +1,6 @@
-title: Bap is a toolkit for making beats with Javascript and Web Audio
+title: Bap - {{site.tagline}}
+---
+headline: Bap is a toolkit for making beats with Javascript and Web Audio
 ---
 text:
 
