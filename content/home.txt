@@ -10,39 +10,33 @@ Kits are collections of numbered slots, which contain one or many layers of samp
 
 All Bap objects are state models and can be cloned and serialized, or manipulated at runtime.
 
-**Bap turns your existing tools - text editor and browser - into a portable sequencer and beatmaking playground with version control.**
-
-## Hello world
+**Bap turns your existing developer tools - text editor and browser - into a portable sequencer and beatmaking playground with version control.**
 
 ```js
 var kit = bap.kit();
-var basic = bap.oscillator({
-  attack: 0.001,
-  release: 0.1,
-  length: 0.08
-});
-
-kit.slot(1).layer(basic.with({ frequency: 330 }));
-kit.slot(2).layer(basic.with({ frequency: 440 }));
-
-// create the pattern and add notes using expressions
-var pattern = bap.pattern({ bars: 2 });
+kit.slot(1).layer('site/files/sounds/kick.wav');
+kit.slot(2).layer('site/files/sounds/snare.wav');
+kit.slot(3).layer('site/files/sounds/hihat.wav');
+var pattern = bap.pattern({ bars: 2, tempo: 90 });
 pattern.channel(1).add(
-  ['*.1.01', 'A1'],
-  ['*.2%1.01', 'A2']
+  ['*.1.01',     'A1'],
+  ['*.2.81',     'A1'],
+  ['*.3.52',     'A1', null, 60],
+  ['*.4.78',     'A1', null, 60, -20],
+  ['*.odd.91', 'A2'],
+  ['*.*.2%51', 'A3', null, 20]
 );
-
 bap.clock.sequence = pattern.kit('A', kit);
 ```
 {{script "scripts/editor"}}
 
-## Learn more
+## Want to learn more?
 
 - Get setup and learn the basics in [Getting started](/getting-started)
 - Check out the interactive in-depth [Guides](/guides)
 - Browse more examples with annotated source in the [Made with Bap](/made-with-bap) gallery
 
-Made by Adam Renklint, Berlin april-may 2015
+Made by {{link "http://adamrenklint.com" "Adam Renklint" target="_blank"}}, Berlin april-may 2015. [MIT licensed](/about#license).
 
 ---
 

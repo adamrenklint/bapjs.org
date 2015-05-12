@@ -27,7 +27,7 @@ var bap = window.bap;
 ```
 
 position signature
-note expressions: intro + link to guide
+smart position expressions: intro + link to guide
 kits, slots and layers
 patterns, sequences
 connect and start/pause/stop + link to controlling playback guide
