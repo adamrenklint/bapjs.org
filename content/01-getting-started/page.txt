@@ -32,14 +32,3 @@ kits, slots and layers
 patterns, sequences
 connect and start/pause/stop + link to controlling playback guide
 where to go next: api reference, guides or gallery/made with bap
-
-
-
-
-## Examples
-
-### Hello world
-
-The "hello world" application of Web Audio libraries, a simple metronome:
-
-### Straight boombap drum

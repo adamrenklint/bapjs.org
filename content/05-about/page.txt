@@ -2,6 +2,7 @@ title: About
 ---
 text:
 
+- Version 0.2
 - Bap is built by me, Adam...
 - License
 - roadmap and vision

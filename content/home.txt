@@ -2,21 +2,39 @@ title: Bap is a toolkit for making beats with Javascript and Web Audio
 ---
 text:
 
-Inspired by the workflow of MPC60, it combines the expressiveness of code with a modular and efficient approach to making beats, for playback in modern browsers. Powered by a resilient internal clock running at 96 ticks per beat.
+Inspired by the workflow of MPC60, it combines the expressiveness of code with a modular and efficient process of making beats, for playback in modern browsers. Powered by a resilient internal clock running at 96 ticks per beat.
 
 **A beat is made up of kits, patterns and sequences.**
 
-Kits are collections of numbered slots, which contains one or many layers of samples and oscillators. One or many kits are connected to a pattern, which is a collection of numbered channels, and each channel can contain many notes.
+Kits are collections of numbered slots, which contain one or many layers of samples and oscillators. One or many kits are connected to a pattern, which is a collection of numbered channels, and each channel can contain many notes. Patterns can be combined in rows and layers to sequences with variable tempo.
 
-Patterns can be combined in rows and layers to sequences with variable tempo.
+All Bap objects are state models and can be cloned and serialized, or manipulated at runtime.
 
-**All Bap objects are state models, and can be cloned and serialized.**
+**Bap turns your existing tools - text editor and browser - into a portable sequencer and beatmaking playground with version control.**
 
 ## Hello world
 
+```js
+var kit = bap.kit();
+var basic = bap.oscillator({
+  attack: 0.001,
+  release: 0.1,
+  length: 0.08
+});
+
+kit.slot(1).layer(basic.with({ frequency: 330 }));
+kit.slot(2).layer(basic.with({ frequency: 440 }));
+
+// create the pattern and add notes using expressions
+var pattern = bap.pattern({ bars: 2 });
+pattern.channel(1).add(
+  ['*.1.01', 'A1'],
+  ['*.2%1.01', 'A2']
+);
+
+bap.clock.sequence = pattern.kit('A', kit);
 ```
-metronome playable example
-```
+{{script "scripts/editor"}}
 
 ## Learn more
 

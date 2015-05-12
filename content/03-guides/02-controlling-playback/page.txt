@@ -1,0 +1,8 @@
+title: Controlling playback
+---
+text:
+
+- start/pause/stop a pattern/sequences
+- changing pattern/sequence by calling started
+- calling methods on bap.clock
+- changing playing state
