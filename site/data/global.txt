@@ -1,0 +1,5 @@
+tagline: A toolkit for making beats with Javascript
+---
+stableVersion: 0.2.1
+---
+lastReleaseDate: "2015-05-10"

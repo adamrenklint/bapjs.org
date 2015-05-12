@@ -1,0 +1,14 @@
+{{import "header"}}
+
+<h1>{{title}}</h1>
+
+<ul class="article-list">
+  {{#children page.url}}
+    <li>
+      <h2>{{link this.url this.title}}</h2>
+      <p>{{this.text}}</p>
+    </li>
+  {{/children}}
+</ul>
+
+{{import "footer"}}

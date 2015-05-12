@@ -1,0 +1,24 @@
+{{import "header"}}
+
+<h1>{{title}} <small>v{{version}}</small></h1>
+
+{{text}}
+
+{{source}}
+{{script "scripts/editor"}}
+
+<div class="pagination-links">
+  {{#sibling "prev" url}}
+    {{#link this.url class="prev-link"}}
+      « {{this.title}}
+    {{/link}}
+  {{/sibling}}
+
+  {{#sibling "next" url}}
+    {{#link this.url class="next-link"}}
+      {{this.title}} »
+    {{/link}}
+  {{/sibling}}
+</div>
+
+{{import "footer"}}

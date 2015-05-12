@@ -12,18 +12,3 @@ Website for [Bap](https://github.com/adamrenklint/bap), powered by [asimov-stati
 ## License
 
 MIT © 2015 [Adam Renklint](http://adamrenklint.com)
-
-## Changelog
-
-- **1.0.0**
-  - Initial public release
-- **1.1.0**
-  - Added link to Github repo
-  - Tweaked homepage copy
-  - Improved buttons and margins in responsive mode
-- **1.2.0**
-  - Added favicon
-- **1.3.0**
-  - Added version number
-- **1.4.0**
-  - Bap v0.2 is released: updated version number
