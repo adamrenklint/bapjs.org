@@ -2,4 +2,4 @@ title: Bap, beatmaking toolkit with Javascript and Web Audio
 ---
 text:
 
-A toolkit for making beats and composing sequences with Javascript and Web Audio
+A toolkit for making beats and composing sequences with Javascript and Web Audio for playback in modern browsers
