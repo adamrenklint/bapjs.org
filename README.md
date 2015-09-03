@@ -31,3 +31,5 @@ MIT © 2015 [Adam Renklint](http://adamrenklint.com)
   - Tweaked homepage tagline
   - Renamed homepage "source" link to "docs"
   - Update Bap version number to 0.2.2
+- **1.6.0**
+  - Relesed Bap v0.2: updated version number
