@@ -32,4 +32,6 @@ MIT © 2015 [Adam Renklint](http://adamrenklint.com)
   - Renamed homepage "source" link to "docs"
   - Update Bap version number to 0.2.2
 - **1.6.0**
-  - Relesed Bap v0.2: updated version number
+  - Released Bap v0.2: updated version number
+- **1.7.0**
+  - Released Bap v0.4: updated version number
