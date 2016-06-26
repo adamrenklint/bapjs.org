@@ -39,3 +39,5 @@ MIT © 2015 [Adam Renklint](http://adamrenklint.com)
   - Released Bap v0.4: updated version number
 - **1.9.0**
   - Released Bap v0.5: updated version number
+- **1.10.0**
+  - Released Bap v0.7: updated version number
