@@ -43,3 +43,5 @@ MIT © 2015 [Adam Renklint](http://adamrenklint.com)
   - Released Bap v0.7: updated version number
 - **1.11.0**
   - Released Bap v0.7.3: updated version number
+- **1.12.0**
+  - Point to examples.bapjs.org instead of adamrenklint.com/bap
